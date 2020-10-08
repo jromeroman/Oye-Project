@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/estilos1.css" />
+    <title>OYE</title>
+</head>
+
+<body>
+    <div class="contenedors">
+        <div class="contenedor1">
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+
+                <div class="logo">
+                    <img class="img-logo" src="./imagenes/logo.png" alt="">
+                    <a href="index.html" class="logo-text">OYE</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span> <!--este-->
+                 </button>
+                <div class="collapse navbar-collapse navbar-nav mr-auto" id="navbarsExampleDefault">
+                    <ul class=" mr-auto navbar-nav">
+                        <li> <a href="index.html">Inicio</li></a>
+                            <li> <a href="canciones.html">Canciones</li></a>
+                    </ul>
+                    <div class="botones mr-auto navbar-nav">
+                        <button type="button" class="btns btn-ter" data-toggle="modal" data-target="#ventana">
+												Contacto
+										</button>
+                        <button type="button" class="btns btn-primarys">
+											<a  href="login.html" class="btns-change">Inicio de Sesión</a>
+										</button>
+                        <button type="button" class="btns btn-primarys ">
+										<a  href="registro.html" class="btns-change">Registro</a>
+										</button>
+                        <div class="modal" tabindex="-1" role="dialog" id="ventana">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Contacto</h5>
+                                        <button type="button" class="close" data-dismiss="modal">
+																	<span aria-hidden="true">&times;</span>
+																</button>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    <h5 class="infmodal">info@oye.com</h5>
+                                    <h3 class="text-blue_modal">+1 123 123123123</h3>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btns btn-primarys" data-dismiss="modal">
+																		Cerrar
+																	</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        function abrir() {
+                            $("#ventana").modal("show");
+                        }
+                    </script>
+                    <div class="row">
+                    </div>
+
+                </div>
+
+            </nav>
+            <div class="caja">
+                <div class="banner">
+                    <div class="banner-card-login">
+                        <div class="card-contenido-login">
+                            <main class="contenedor seccion contenido-centrado">
+                                <h2 class="fw-300 centrar-texto">Inicio de Sesión</h2>
+
+                                <form class="formulario" action="">
+                                    <label for="inputEmail" class="sr-only">Correo Electrónico</label>
+                                    <input type="email" id="email" class="form-control" placeholder="Correo electrónico" required autofocus />
+                                    <span id="errorEmail" class="error"></span>
+                                    <label for="inputPassword" class="sr-only">Contraseña</label>
+                                    <input type="password" id="contrasena" class="form-control" placeholder="Contraseña" required />
+                                    <span id="errorContrasena" class="error"></span>
+                                    <button class="btns btn-lg btn-primarys btn-block" type="submit" value="Continuar" onclick="return validar(this.form)">Continuar
+                                    </button>
+                                </form>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+                <!--cierre banner-->
+                <div class="banner">
+                    <div class="banner-card-login">
+                    </div>
+                </div>
+                <!--cierre 1 contenedor-->
+            </div>
+            <!--cierre  contenedor principal-->
+            <footer class="footer contenedor1">
+                <div class="footer">
+                    <p class="cmusica"> Comparte la música</p>
+                </div>
+                <div class="footer">
+                    <p class="derechos"> &copy Derechos Reservados</p>
+                </div>
+            </footer>
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <script src="js/main.js"></script>
+</body>
+
+</html>

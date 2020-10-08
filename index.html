@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <!-- Bootstrap CSS  Y AJUSTADOS-->
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/estilos1.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>OYE</title>
+</head>
+
+<body>
+    <div class="contenedors">
+        <div class="contenedor1">
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+
+                <div class="logo">
+                    <img class="img-logo" src="./imagenes/logo.png" alt="">
+                    <a href="index.html" class="logo-text">OYE</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span> <!--este-->
+                 </button>
+                <div class="collapse navbar-collapse navbar-nav mr-auto" id="navbarsExampleDefault">
+                    <ul class=" mr-auto navbar-nav">
+                        <li> <a href="index.html">Inicio</li></a>
+                            <li> <a href="canciones.html">Canciones</li></a>
+                    </ul>
+                    <div class="botones mr-auto navbar-nav">
+                        <button type="button" class="btns btn-ter" data-toggle="modal" data-target="#ventana">
+												Contacto
+										</button>
+                        <button type="button" class="btns btn-primarys">
+											<a  href="login.html" class="btns-change">Inicio de Sesión</a>
+										</button>
+                        <button type="button" class="btns btn-primarys ">
+										<a  href="registro.html" class="btns-change">Registro</a>
+										</button>
+                        <div class="modal" tabindex="-1" role="dialog" id="ventana">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Contacto</h5>
+                                        <button type="button" class="close" data-dismiss="modal">
+																	<span aria-hidden="true">&times;</span>
+																</button>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    <h5 class="infmodal">info@oye.com</h5>
+                                    <h3 class="text-blue_modal">+1 123 123123123</h3>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btns btn-primarys" data-dismiss="modal">
+																		Cerrar
+																	</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        function abrir() {
+                            $("#ventana").modal("show");
+                        }
+                    </script>
+                    <div class="row">
+                    </div>
+
+                </div>
+
+            </nav>
+            <div class="caja">
+                <div class="banner">
+                    <div class="banner-card">
+                        <div class="contenido card-contenido">
+                            <h2 class="text-h2">Canciones gratis para la comunidad! </h2>
+                            <p class="parrafos">Con este sitio podrás escuchar audios de manera libre..</p>
+                            <button type="button" class="btns btn-secundario card">
+																	<a href="canciones.html" class="btns-change">Ver Canciones</a>
+																</button>
+                        </div>
+                        <div class="contenido-img card-contenido ">
+                            <img class="img-card" src="./imagenes/portada.jpeg" alt="">
+                            <img class="img-card" src="./imagenes/portada1.jpeg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <!--cierre banner-->
+                <div class="banner">
+
+                </div>
+                <div class="banner2 banner">
+
+                    <div class="top-3 ">
+                        <hr>
+                        <h2 class="text-h2-1 ">Top 3</h2>
+                        <hr>
+                        <div class="canciones">
+                            <div class="canciones">
+                                <h3 class="nombre">Nombre</h3>
+                                <hr>
+                                </td>
+                                <h3 class="ncanciones">Canción</h3>
+                                </td>
+                            </div>
+                            <div class="canciones">
+                            </div>
+                        </div>
+                        <hr>
+
+                    </div>
+
+
+                </div>
+                <div id="top-general">
+                    <!-- hfhfhf -->
+                </div>
+            </div>
+            <!--cierre 1 contenedor-->
+
+        </div>
+        <!--cierre  contenedor principal-->
+        <footer class="footer contenedor1">
+            <div class="footer">
+                <p class="cmusica"> Comparte la música</p>
+            </div>
+            <div class="footer">
+                <p class="derechos"> &copy Derechos Reservados</p>
+            </div>
+
+        </footer>
+
+        </footer>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="/js/menuHambuerguesa.js"></script>
+        <script src="/js/top3.js"></script>
+</body>
+
+</html>
